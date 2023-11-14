@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app_1810/src/features/get_weather_by_city_name/presentation/screens/home.dart';
+import 'package:weather_app_1810/src/core/widgets/error_widget.dart';
 
 class AppRoutes {
   static Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       case Routes.intitialRoute:
         return MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => const ErrorScreen(),
         );
+      // return MaterialPageRoute(
+      //   builder: (context) => BlocProvider(
+      //     create: (context) => ,
+      //     child: const HomeScreen()),
+      // );
 
       // case Routes.testRoute:
       //   // return MaterialPageRoute(
